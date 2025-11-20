@@ -1,17 +1,17 @@
 import { Separator } from "@/components/ui/separator";
-import { Mail, Phone, MapPin, Linkedin, Twitter } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 
 export const Footer = () => {
   return (
     <footer className="bg-foreground text-background py-16">
       <div className="container px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-12">
+          <div className="grid md:grid-cols-2 gap-12">
             {/* About */}
             <div className="space-y-4">
-              <h3 className="text-xl font-bold">Protocolo Brasileiro</h3>
+              <h3 className="text-xl font-bold">Protocolo de Governança e Sustentabilidade para o Turismo Brasileiro</h3>
               <p className="text-background/80 leading-relaxed">
-                A primeira plataforma nacional de certificação e registro de créditos socioambientais, unindo tecnologia, ciência e governança.
+                O novo padrão nacional para certificação, registro e rastreabilidade de créditos socioambientais, impulsionando um turismo sustentável e inovador em todo o Brasil.
               </p>
             </div>
 
@@ -31,27 +31,6 @@ export const Footer = () => {
                   <MapPin className="w-4 h-4 shrink-0" />
                   <span className="text-sm">Brasília - DF, Brasil</span>
                 </div>
-              </div>
-            </div>
-
-            {/* Social */}
-            <div className="space-y-4">
-              <h3 className="text-xl font-bold">Redes Sociais</h3>
-              <div className="flex gap-4">
-                <a 
-                  href="#" 
-                  className="p-3 rounded-full bg-background/10 hover:bg-background/20 transition-colors"
-                  aria-label="LinkedIn"
-                >
-                  <Linkedin className="w-5 h-5" />
-                </a>
-                <a 
-                  href="#" 
-                  className="p-3 rounded-full bg-background/10 hover:bg-background/20 transition-colors"
-                  aria-label="Twitter"
-                >
-                  <Twitter className="w-5 h-5" />
-                </a>
               </div>
             </div>
           </div>
