@@ -35,7 +35,7 @@ export const CoverageSection = () => {
           </h2>
 
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Lançado oficialmente na <strong className="text-primary">COP30 (Belém)</strong> e simbolicamente no <strong className="text-primary">Cristo Redentor</strong>, o Protocolo já está sendo implementado em projetos-piloto nos principais biomas brasileiros, com expansão nacional até 2030.
+            Lançado oficialmente na <strong className="text-primary">COP30 (Belém)</strong>, o Protocolo já está sendo implementado em projetos-piloto nos principais biomas brasileiros, com expansão nacional até 2030.
           </p>
 
           <div className="flex flex-wrap justify-center gap-3 pt-4">
