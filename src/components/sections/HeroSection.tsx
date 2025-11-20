@@ -1,8 +1,12 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import heroImage from "@/assets/hero-amazon.jpg";
+import { ContactDialog } from "@/components/ContactDialog";
 
 export const HeroSection = () => {
+  const [dialogOpen, setDialogOpen] = useState(false);
+
   return (
     <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
@@ -27,11 +31,22 @@ export const HeroSection = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4 animate-in fade-in slide-in-from-bottom-6 duration-700 delay-300">
-            <Button variant="hero" size="xl" className="group">
+            <Button 
+              variant="hero" 
+              size="xl" 
+              className="group"
+              onClick={() => setDialogOpen(true)}
+            >
               Quero Fazer Parte Desta Mudança
               <ArrowRight className="group-hover:translate-x-1 transition-transform" />
             </Button>
           </div>
+          
+          <ContactDialog 
+            open={dialogOpen} 
+            onOpenChange={setDialogOpen}
+            title="Quero Fazer Parte Desta Mudança"
+          />
         </div>
       </div>
 
