@@ -4,8 +4,6 @@ import { CoverageSection } from "@/components/sections/CoverageSection";
 import { TimelineSection } from "@/components/sections/TimelineSection";
 import { PartnersSection } from "@/components/sections/PartnersSection";
 import { ProcessSection } from "@/components/sections/ProcessSection";
-import { InvestmentSection } from "@/components/sections/InvestmentSection";
-import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { CTASection } from "@/components/sections/CTASection";
 import { Footer } from "@/components/sections/Footer";
 
@@ -18,8 +16,6 @@ const Index = () => {
       <TimelineSection />
       <PartnersSection />
       <ProcessSection />
-      <InvestmentSection />
-      <TestimonialsSection />
       <CTASection />
       <Footer />
     </div>
