@@ -61,7 +61,7 @@ export const PartnersSection = () => {
                 >
                   <div className="space-y-4">
                     <div className="flex items-start gap-4">
-                      <div className="w-16 h-16 rounded-lg bg-background p-2 shrink-0 flex items-center justify-center">
+                      <div className="w-20 h-20 rounded-lg bg-white p-3 shrink-0 flex items-center justify-center border border-border">
                         <img 
                           src={partner.logo} 
                           alt={`Logo ${partner.name}`}

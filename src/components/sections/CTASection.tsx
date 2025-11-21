@@ -3,7 +3,7 @@ import { Building2, FileText, HandshakeIcon, Newspaper } from "lucide-react";
 
 export const CTASection = () => {
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/5561999122626', '_blank');
+    window.open('https://wa.me/5561999122626', '_blank', 'noopener,noreferrer');
   };
 
   const ctas = [
