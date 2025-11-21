@@ -4,7 +4,7 @@ import heroImage from "@/assets/hero-amazon.jpg";
 
 export const HeroSection = () => {
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/5561999122626', '_blank', 'noopener,noreferrer');
+    window.open('https://api.whatsapp.com/send/?phone=5561999122626&text&type=phone_number&app_absent=0', '_blank', 'noopener,noreferrer');
   };
 
   return (
