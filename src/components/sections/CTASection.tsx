@@ -3,7 +3,7 @@ import { Building2, FileText, HandshakeIcon, Newspaper } from "lucide-react";
 
 export const CTASection = () => {
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/5561999122626', '_blank', 'noopener,noreferrer');
+    window.open('https://api.whatsapp.com/send/?phone=5561999122626&text&type=phone_number&app_absent=0', '_blank', 'noopener,noreferrer');
   };
 
   const ctas = [
