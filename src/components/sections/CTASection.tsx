@@ -1,16 +1,11 @@
-import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Building2, FileText, HandshakeIcon, Newspaper } from "lucide-react";
-import { ContactDialog } from "@/components/ContactDialog";
 
 export const CTASection = () => {
-  const [dialogOpen, setDialogOpen] = useState(false);
-  const [dialogTitle, setDialogTitle] = useState("");
-
-  const handleCTAClick = (label: string) => {
-    setDialogTitle(label);
-    setDialogOpen(true);
+  const handleWhatsAppClick = () => {
+    window.open('https://wa.me/5561999122626', '_blank');
   };
+
   const ctas = [
     {
       label: "Quero Ser um Município Pioneiro",
@@ -60,7 +55,7 @@ export const CTASection = () => {
                   variant={cta.variant}
                   size="lg"
                   className="w-full justify-start h-auto py-4 px-6"
-                  onClick={() => handleCTAClick(cta.label)}
+                  onClick={handleWhatsAppClick}
                 >
                   <Icon className="w-5 h-5 shrink-0" />
                   <span className="flex-1 text-left">{cta.label}</span>
@@ -68,12 +63,6 @@ export const CTASection = () => {
               );
             })}
           </div>
-          
-          <ContactDialog 
-            open={dialogOpen} 
-            onOpenChange={setDialogOpen}
-            title={dialogTitle}
-          />
         </div>
       </div>
     </section>

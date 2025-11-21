@@ -1,36 +1,40 @@
 import { Card } from "@/components/ui/card";
-import { Building2, FlaskConical, Leaf, Shield, Users } from "lucide-react";
+import bonoLogo from "@/assets/bono-esg-logo.png";
+import basacLogo from "@/assets/basac-logo.jpg";
+import rcgiLogo from "@/assets/rcgi-usp-logo.png";
+import veadeirosLogo from "@/assets/instituto-veadeiros-logo.jpg";
+import cnturLogo from "@/assets/cntur-logo.jpg";
 
 export const PartnersSection = () => {
   const partners = [
     {
       name: "Bono ESG",
       role: "Desenvolvedora do projeto",
-      icon: Building2,
+      logo: bonoLogo,
       description: "Plataforma tecnológica e governança",
     },
     {
       name: "BASAC",
       role: "Consultoria ambiental e estratégica",
-      icon: Shield,
+      logo: basacLogo,
       description: "Expertise em projetos socioambientais",
     },
     {
       name: "RCGI-USP",
       role: "Validação científica e registro cartorial",
-      icon: FlaskConical,
+      logo: rcgiLogo,
       description: "Credibilidade acadêmica e rigor científico",
     },
     {
       name: "Instituto Veadeiros",
       role: "Metodologia NTZ-L",
-      icon: Leaf,
+      logo: veadeirosLogo,
       description: "Créditos integrados de carbono e biodiversidade",
     },
     {
       name: "CNTUR",
       role: "Adoção nacional pelo setor de turismo",
-      icon: Users,
+      logo: cnturLogo,
       description: "Implementação em escala nacional",
     },
   ];
@@ -50,7 +54,6 @@ export const PartnersSection = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {partners.map((partner, index) => {
-              const Icon = partner.icon;
               return (
                 <Card 
                   key={index}
@@ -58,8 +61,12 @@ export const PartnersSection = () => {
                 >
                   <div className="space-y-4">
                     <div className="flex items-start gap-4">
-                      <div className="p-3 rounded-lg bg-primary/10 shrink-0">
-                        <Icon className="w-6 h-6 text-primary" />
+                      <div className="w-16 h-16 rounded-lg bg-background p-2 shrink-0 flex items-center justify-center">
+                        <img 
+                          src={partner.logo} 
+                          alt={`Logo ${partner.name}`}
+                          className="w-full h-full object-contain"
+                        />
                       </div>
                       <div className="flex-1 space-y-1">
                         <h3 className="text-lg font-bold text-card-foreground">
