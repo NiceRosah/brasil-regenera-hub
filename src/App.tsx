@@ -15,8 +15,6 @@ const App = () => (
       <Sonner />
       <Routes>
         <Route index element={<Index />} />
-
-        {/* Rotas sempre SEM "/" quando tem basename */}
         <Route path="*" element={<NotFound />} />
       </Routes>
     </TooltipProvider>
