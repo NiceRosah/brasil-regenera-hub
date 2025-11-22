@@ -5,25 +5,12 @@ import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
   base: "/brasil-regenera-hub/",
-
-  build: {
-    sourcemap: false,
-    outDir: "dist"
-  },
-
-  server: {
-    host: true,
-    port: 8080
-  },
-
-  plugins: [
-    react(),
-    mode === "development" && componentTagger()
-  ].filter(Boolean),
-
+  build: { sourcemap: true },
+  server: { host: "::", port: 8080 },
+  plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src")
-    }
-  }
+      "@": path.resolve(__dirname, "./src"),
+    },
+  },
 }));
