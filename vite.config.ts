@@ -7,11 +7,12 @@ export default defineConfig(({ mode }) => ({
   base: "/brasil-regenera-hub/",
 
   build: {
-    sourcemap: true
+    sourcemap: false,
+    outDir: "dist"
   },
 
   server: {
-    host: "::",
+    host: true,
     port: 8080
   },
 
