@@ -1,11 +1,12 @@
-import ErrorBoundary from "./ErrorBoundary";
+import React from "react";
+import { createRoot } from "react-dom/client"; // <- CORRETO
+import { BrowserRouter } from "react-router-dom";
+import App from "./App";
 
-ReactDOM.createRoot(document.getElementById("root")!).render(
+createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <ErrorBoundary>
-      <BrowserRouter basename="/brasil-regenera-hub">
-        <App />
-      </BrowserRouter>
-    </ErrorBoundary>
+    <BrowserRouter basename="/brasil-regenera-hub">
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
 );
